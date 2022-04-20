@@ -24,7 +24,7 @@
         uint256 public startTime = block.timestamp;
         
         modifier voteEnded() {
-            require(block.timestamp < startTime + 2 minutes, "Vote Ended");
+            require(block.timestamp < startTime + 5 minutes, "Vote Ended");
             _;
         }
 
